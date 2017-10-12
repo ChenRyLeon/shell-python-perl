@@ -1,7 +1,8 @@
 {
   "ignition": {
     "config": {},
-    "version": "2.0.0"
+    "timeouts": {},
+    "version": "2.1.0"
   },
   "networkd": {},
   "passwd": {
@@ -9,31 +10,11 @@
       {
         "name": "core",
         "sshAuthorizedKeys": [
-          "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAwhYv4GWQ7ea+DdmewCtFuwOe3EeyVRKd4pDO+tPt7P57PhR3oueT2aTaoC6MxJ4aziuM59zZvvPEjLbdPFiZTFKI3yvP/ihKVQNgBErCrwpgqUxaSpd4YbjV73eSGZ46gtfkKelH+x4RFAUG9l9QHjixSjtSf2G1dMtblm5Z6RtO1DsNzK70ejRRNgfKWKppp9LqeVpyuC34HXEltDh6fFxAHkAAHTBI8zBNLg8iWWirQ5pdrviUf5YIzk893gOLLM6IiQaZJM4T4b/y2BK5d+OMjqyznRc18nMDqW5lVASnYnXbhTMru7p1bJHGBnGK4xvpGQJg+aRM+CvDv4CnLQ== root@lekan.lekan.com"
+          "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDWTLY2Nu7fFmRkAY0tKinTCcq6bRnIhehbWYGhIM2yIpN2HcOILjSBOmP4PbxMCQgcXaArBDvnwugUj4iz2QV2amr+a8HKZopp88l2qXwZd/5WPtflRqO5mMTdv86coS8Wz18oVYyt3nxeNgmw/PS/OCzYyK8Lz/SWnhXo/FC5lw=="
         ]
       }
-     ]
+    ]
   },
-  "storage": {
-    "files": [
-     {
-      "filesystem": "root",
-      "path": "/etc/sysctl.d/99-sysctl.conf",
-      "contents": { "source": "https://raw.githubusercontent.com/slpcat/fai_config/master/files/etc/sysctl.conf/PXEBASE" }
-     },
-     {
-      "filesystem": "root",
-      "path": "/etc/security/limits.conf",
-      "contents": { "source": "https://raw.githubusercontent.com/slpcat/fai_config/master/files/etc/security/limits.conf/PXEBASE" }
-     }
-    ]
-},
-  "systemd": {
-    "units": [
-      {
-        "enable": true,
-        "name": "etcd2.service"
-      }
-    ]
-  }
+  "storage": {},
+  "systemd": {}
 }
